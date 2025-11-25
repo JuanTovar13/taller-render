@@ -1,8 +1,8 @@
 
 import { useState, useEffect } from 'react';
 import { supabase } from './supabaseClient';
-import  AuthForm  from './components/AuthForm'
-import  FileList  from './components/FileList'
+import  AuthForm  from './components/AuthForm.tsx'
+import  FileList  from './components/FileList.tsx'
 import './App.css'
 
 // --- Componentes Reutilizables y Utilitarios ---
