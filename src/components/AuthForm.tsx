@@ -36,7 +36,7 @@ export default function AuthForm({ onSignIn }) {
 
   return (
     <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 text-indigo-500">
-      <h3 className="text-xl font-bold mb-4 flex justify-between items-center text-indigo-700">Autenticación de Usuario</h3>  
+      <h3 className="text-xl font-bold mb-4 flex justify-between items-center text-red-700">Autenticación de Usuario</h3>  
       <form onSubmit={(e) => e.preventDefault()} style={{ gap: '15px' }}>
         <input style={{ margin: '10px' }}
           type="email"
@@ -55,7 +55,7 @@ export default function AuthForm({ onSignIn }) {
         <button style={{ margin: '5px' }}
           onClick={() => handleAuth(false)}
           disabled={loading || !email || !password}
-          className="py-2 px-4 bg-indigo-400 text-white font-semibold rounded-lg hover:bg-indigo-600 cursor-pointer transition duration-200"
+          className="py-2 px-4 bg-red-400 text-white font-semibold rounded-lg hover:bg-indigo-600 cursor-pointer transition duration-200"
         >
           {loading ? 'Cargando...' : 'Iniciar Sesión'}
         </button>
