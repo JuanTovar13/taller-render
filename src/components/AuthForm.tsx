@@ -35,7 +35,7 @@ export default function AuthForm({ onSignIn }) {
   };
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 text-indigo-500">
+    <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 text-red-500">
       <h3 className="text-xl font-bold mb-4 flex justify-between items-center text-red-700">Autenticación de Usuario</h3>  
       <form onSubmit={(e) => e.preventDefault()} style={{ gap: '15px' }}>
         <input style={{ margin: '10px' }}
